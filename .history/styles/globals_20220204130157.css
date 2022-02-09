@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    scroll-behavior: smooth;
+   height: 5500px;
+  background: linear-gradient(#000000, #000000 15%, #737373 51%, #ffffff 75%);
+
+}
+.left-50{
+    left: 50%;
+}
+.right-50{
+    right: 50%;
+}
+.top-50{
+    top:50%;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+.secondary-title {
+    @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+    content: "";
+    @apply block w-12 h-2 bg-theme rounded-full mb-1;
+}
+
+.section-paragraph {
+    @apply text-secondary my-6 w-full max-w-3xl;
+}
+
+.badge {
+    @apply px-4 py-2 text-sm rounded bg-badge;
+}
+
+[id] {
+scroll-margin-top: 100px;
+}
+
+.left-percentage {
+    left: 5%;
+}
+
+.h-screen-partial {
+    height: 80vh;
+}
+
+.logo{
+    transition: 0.2s;
+}
+.logo:hover{
+    transition: 0.2s;
+    letter-spacing: 0.5em;
+}
+
+
+.nav-dot:hover span{
+    opacity:1;
+    transition: background 200ms
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#section1 {
+    height: 800px;
+    
+  }
+  
+  #section2 {
+    height: 800px;
+    
+  }
+  #section3 {
+      height: 1100px;
+  }
