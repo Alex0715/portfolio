@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import Work from '../components/work'
-import Client from '../components/client'
-import Hire from '../components/Hire'
+import Header from 'components/Header.js'
+import Banner from 'components\Banner.js'
+
 
 export default function Home() {
   return (
