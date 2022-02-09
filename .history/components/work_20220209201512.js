@@ -23,13 +23,13 @@ function Work() {
           <a><img src="/webd.jpeg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
           <p className="section-paragraph">Web Development <br></br> I did my front-end courses on react and nextjs from youtube and other web sources.</p>
           </a>
-          <a className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"><img src="guitar.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
+          <a><img src="guitar.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
           <p className="section-paragraph">Playing Guitar <br></br> I play good guitar, even when i am stuck at any problem or solving difficult problems playing it helps me calm down and to focus more.</p>
           </a>
-          <a className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"><img src="/comp.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
+          <a><img src="/comp.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
           <p className="section-paragraph">Building PC <br></br>Being a tech nred I love assembling computer parts and I made near about 18-20 builds last year for clients, friends and family</p>
           </a>
-          <a className="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover"><img src="/football.jpeg" className="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover"/>
+          <a className="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover"><img src="/football.jpeg" />
           <p className="section-paragraph">I Love playing Football <br></br> I played for several local clubs, school team and also college team and this helps me to take up any situaion sportingly.</p>
           </a>
       </div>

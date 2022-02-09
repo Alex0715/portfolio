@@ -23,7 +23,7 @@ function Work() {
           <a><img src="/webd.jpeg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
           <p className="section-paragraph">Web Development <br></br> I did my front-end courses on react and nextjs from youtube and other web sources.</p>
           </a>
-          <a className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"><img src="guitar.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
+          <a><img src="guitar.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
           <p className="section-paragraph">Playing Guitar <br></br> I play good guitar, even when i am stuck at any problem or solving difficult problems playing it helps me calm down and to focus more.</p>
           </a>
           <a className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"><img src="/comp.jpg" className="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"/>
