@@ -3,7 +3,7 @@ function Hire() {
   <section className="w-full">
       <h2 id="hire" className="secondary-title text-gray-700">Hire me</h2>
       <p className="section-paragraph">Feel free to contact me at any time, through any method below.</p>
-      <a href="https://drive.google.com/file/d/1y2Si5IQOsLWDUNGVzsnboBCcY1qo0Q-q/view?usp=sharing" className="text-gray-600 underline">RESUME</a>
+      <a href="https://wa.me/917003474297" className="text-gray-600 underline">07003474297</a>
 
      
 

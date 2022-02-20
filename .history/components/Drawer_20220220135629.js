@@ -47,10 +47,10 @@ const Drawer = () => {
             
             <a
               className="px-2 py-4 text-white hover:text-indigo-600"
-              href="https://drive.google.com/file/d/1y2Si5IQOsLWDUNGVzsnboBCcY1qo0Q-q/view?usp=sharing"
+              href="mailto:arjunbose.ar@gmail.com"
               onClick={drawerCloseHandler}
             >
-              Resume
+              Hire Me
             </a>
 
             <a
