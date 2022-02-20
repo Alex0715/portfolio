@@ -4,12 +4,10 @@ import Banner from '../components/Banner'
 import Work from '../components/work'
 import Client from '../components/client'
 import Hire from '../components/Hire'
-import Drawer from '../components/Drawer'
 
 export default function Home() {
   return (
     <div className='bg-black'>
-      <Drawer />
       <Header />
       
       <body >

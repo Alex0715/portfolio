@@ -86,4 +86,22 @@ html {
       height: 1000px;
   }
 
-  
+
+  .toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active{
+    position: relative;
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}

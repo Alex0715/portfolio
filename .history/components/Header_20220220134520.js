@@ -1,17 +1,5 @@
 import Image from "next/image";
 function Header() {
-  const drawerOpenHandler = () => {
-    document
-      .querySelector('.drawer-container')
-      .classList.remove('-translate-x-full', 'opacity-0')
-
-    setTimeout(() => {
-      document
-        .querySelector('.drawer')
-        .classList.remove('-translate-x-full', 'opacity-0')
-    }, 100)
-  }
-
   return (
   <div className="font-poppins pb-12 ">
   <header className="text-white container py-6 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">

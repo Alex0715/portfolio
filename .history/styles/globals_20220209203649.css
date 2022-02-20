@@ -86,4 +86,24 @@ html {
       height: 1000px;
   }
 
-  
+
+  .toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('menuu.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active{
+    position: relative;
+    background: url('close.png');
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
