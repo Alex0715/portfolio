@@ -46,7 +46,7 @@ function Client() {
                       <div className="badge text-white">Frontend development</div>
                   </div>
 
-                  <p className="text-gray-800">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
+                  <p className="text-gray-800">I’ve had the pleasure of working with multiple Fortune companies, designing and implementing both frontend and backend.</p>
               </div>
 
           </div>
