@@ -47,7 +47,7 @@ const Drawer = () => {
             
             <a
               className="px-2 py-4 text-white hover:text-indigo-600"
-              href="https://drive.google.com/file/d/1y2Si5IQOsLWDUNGVzsnboBCcY1qo0Q-q/view?usp=sharing"
+              href="https://drive.google.com/file/d/1PK4sG4sfmSyroY2WxrRnpqRjKhQQJET4/view?usp=sharing"
               onClick={drawerCloseHandler}
             >
               Resume
