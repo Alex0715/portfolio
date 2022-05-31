@@ -5,8 +5,8 @@ function Work() {
       <p className="section-paragraph">I’ve newly started FreeLancing and want to be a veteran.<br/> I learn from my mistakes very fast and which i think is my best part in web development as you always learn something new.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <a href="https://back-benchers.vercel.app/"><img src="/back.jpg" target="_blank" className="w-full bg-nav h-36 lg:h-72 object-cover"/>
-          <p className="section-paragraph">BackBenchers<br></br>An ecom design inspired from amazon india. I used nextJs and Tailwindcss</p>
+          <a href="https://www.axiomio.com/"><img src="/download.png" target="_blank" className="w-full bg-nav h-36 lg:h-72 object-cover"/>
+          <p className="section-paragraph">Working as SDE in AXIOMIO Hyderabad<br></br>Currently working as Software Developer Engineer in Axiom IO Hyderabad</p>
           </a>
           <a href="https://tlggaming.com/"><img src="/tlg1.jpg" target="_blank" className="w-full bg-nav h-36 lg:h-72 object-cover"/>
           <p className="section-paragraph">TLG Gaming <br></br> I used to work as a website manager and also in SEO management.</p>
