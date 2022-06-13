@@ -22,7 +22,7 @@ function Banner() {
         
         <div className="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36 z-10">
           <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left bg-opacity-0">Building <br/> Web experiences <br/>Amazing !</h1>
-          <p className="p-3 text-secondary">Hello there, I am a java/solidity/front-end Developer <br/> Please check my work !</p><br/>
+          <p className="p-3 text-secondary">Hello there, I am a java/solidity/Full-Stack Developer <br/> Please check my work !</p><br/>
           <div className="flex mt-10">
           <a href="#section2"><button className="bg-theme px-10 py-2 font-bold rounded-md justify-center items-center hover:bg-blue-800">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-auto " fill="none" viewBox="0 0 24 24" stroke="currentColor">
