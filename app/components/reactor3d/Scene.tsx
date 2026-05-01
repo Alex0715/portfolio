@@ -13,7 +13,7 @@ export default function Scene({ scrollProgress }: SceneProps) {
   return (
     <div className="w-full h-full absolute inset-0 z-0">
       {/* The Canvas creates a true WebGL 3D context */}
-      <Canvas camera={{ position: [0, 0, 12], fov: 45 }}>
+      <Canvas camera={{ position: [0, 0, 18], fov: 45 }}>
         {/* Studio Lighting Setup */}
         <ambientLight intensity={0.2} />
         {/* Primary cyan light */}

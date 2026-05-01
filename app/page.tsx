@@ -24,14 +24,13 @@ export default function Home() {
       ref={containerRef}
       className="relative h-[400vh] bg-[#0a0f16] text-white selection:bg-cyan-500/30 overflow-x-clip"
     >
-      {/* THE GLOBAL STICKY STAGE */}
-      <div className="sticky top-0 h-screen w-full flex items-center justify-center pointer-events-none z-0">
+      {/* THE GLOBAL FIXED STAGE — fixed so Canvas covers the full viewport on every section */}
+      <div className="fixed inset-0 w-full h-full pointer-events-none z-0">
         <Scene scrollProgress={scrollYProgress} />
       </div>
 
       {/* FOREGROUND CONTENT */}
-      {/* We pull this up by exactly 1 screen height so it overlaps the sticky background */}
-      <div className="relative z-10 -mt-[100vh]">
+      <div className="relative z-10">
         <Hero />
         <About />
         <Skills />

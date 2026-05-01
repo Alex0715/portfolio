@@ -84,7 +84,7 @@ export default function Experience() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: false, amount: 0.5 }}
-                  className="w-[calc(100%-3rem)] md:w-[45%] ml-12 md:ml-0 p-8 rounded-xl border border-slate-800 bg-[#0a0f16]/90 backdrop-blur-xl hover:border-cyan-500/50 transition-colors group relative overflow-hidden"
+                  className="w-[calc(100%-3rem)] md:w-[45%] ml-12 md:ml-0 p-8 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-colors group relative overflow-hidden"
                 >
                   {/* Subtle Background Glow on Hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
