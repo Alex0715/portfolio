@@ -1,5 +1,6 @@
 "use client";
-import { motion, Variants } from "framer-motion";
+import { Variants } from "framer-motion";
+import { motion } from "framer-motion-3d";
 
 export default function TopDownReactor() {
   // The master boot-up sequence for the entire machine

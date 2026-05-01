@@ -1,10 +1,10 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion-3d";
 import { useRef } from "react";
 
 export default function Experience() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
+  const containerRef = useRef<HTMLDivElement>(null!);
   // Track scroll specifically within this section to draw the vertical line
   const { scrollYProgress } = useScroll({
     target: containerRef,

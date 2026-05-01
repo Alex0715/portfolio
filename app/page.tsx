@@ -2,15 +2,15 @@
 
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
-import ArcReactor from "./components/reactor/ArcReactor";
+// import ArcReactor from "./components/reactor/ArcReactor";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Experience from "./components/sections/Experience";
-
+import Scene from "./components/reactor3d/Scene";
 export default function Home() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null!);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -26,7 +26,7 @@ export default function Home() {
     >
       {/* THE GLOBAL STICKY STAGE */}
       <div className="sticky top-0 h-screen w-full flex items-center justify-center pointer-events-none z-0">
-        <ArcReactor scrollProgress={scrollYProgress} />
+        <Scene scrollProgress={scrollYProgress} />
       </div>
 
       {/* FOREGROUND CONTENT */}

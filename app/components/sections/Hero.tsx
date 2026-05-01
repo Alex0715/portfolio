@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion-3d";
 
 export default function Hero() {
   return (

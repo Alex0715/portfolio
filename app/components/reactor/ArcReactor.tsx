@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, MotionValue, useTransform } from "framer-motion";
+import { MotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion-3d";
 import { Core, Coils, Casing, Labels } from "./ReactorParts";
 
 interface ArcReactorProps {
