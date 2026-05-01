@@ -32,6 +32,15 @@ export default function ReactorModel({
     side: THREE.DoubleSide, // Ensures the inside of the hollow tubes look correct
   });
 
+  // Add this near your other materials
+  const blueprintShellMatSecondary = new THREE.MeshBasicMaterial({
+    color: "#ffffff", // White lines for accent components
+    transparent: true,
+    opacity: 0.7,
+    depthWrite: false, // Ensure transparency renders correctly
+    side: THREE.DoubleSide,
+  });
+
   const edgeColor = "#06b6d4"; // Cyan for that "Stark Tech" vibe
   const edgeThreshold = 15;
 
@@ -185,6 +194,78 @@ export default function ReactorModel({
             <Edges color="#06b6d4" threshold={0} />
           </mesh>
         </group>
+      </motion.group>
+
+      {/* 4. BASE ASSEMBLY (Detailed) */}
+      <motion.group position-z={bottomZ}>
+        {/* Main Base Cylinder (the housing) */}
+        <mesh material={blueprintShellMat} rotation={[Math.PI / 2, 0, 0]}>
+          {/* args: [radiusTop, radiusBottom, height, radialSegments, heightSegments, openEnded] */}
+          <cylinderGeometry args={[2.8, 2.4, 0.8, 32, 1, true]} />
+          <Edges color={edgeColor} threshold={edgeThreshold} />
+        </mesh>
+
+        {/* --- NEW: Bottom Complexity --- */}
+
+        {/* Outer Support Ring (creates a defined rim at the very bottom) */}
+        <mesh position={[0, 0, -0.4]} material={blueprintShellMatSecondary}>
+          <torusGeometry args={[2.4, 0.08, 12, 64]} />
+          <Edges color="#ffffff" threshold={15} />
+        </mesh>
+
+        {/* Inner Conic Housing (angles inward for depth) */}
+        <mesh
+          position={[0, 0, -0.2]}
+          rotation={[Math.PI / 2, 0, 0]}
+          material={blueprintShellMat}
+        >
+          <cylinderGeometry args={[1.5, 0.8, 0.6, 32, 1, true]} />
+          <Edges color={edgeColor} threshold={15} />
+        </mesh>
+
+        {/* 12 Outer Vents/Caps (adds repetitive mechanical detail along the side) */}
+        {[...Array(12)].map((_, i) => (
+          <group key={`vent-${i}`} rotation={[0, 0, (i * Math.PI) / 6]}>
+            <mesh
+              position={[0, 2.7, 0]}
+              rotation={[0, 0, Math.PI / 2]}
+              material={blueprintShellMatSecondary}
+            >
+              <boxGeometry args={[0.3, 0.1, 0.4]} />
+              <Edges color="#ffffff" threshold={15} />
+            </mesh>
+          </group>
+        ))}
+
+        {/* 6 Structural Support Pillars (connects the outer casing to the core) */}
+        {[...Array(6)].map((_, i) => (
+          <group key={`pillar-${i}`} rotation={[0, 0, (i * Math.PI) / 3]}>
+            <mesh position={[0, 1.2, -0.3]} material={blueprintShellMat}>
+              <cylinderGeometry args={[0.05, 0.05, 0.8, 8]} />
+              <Edges color={edgeColor} threshold={15} />
+            </mesh>
+            {/* Base mounting pads for the pillars */}
+            <mesh
+              position={[0, 1.2, -0.7]}
+              material={blueprintShellMatSecondary}
+            >
+              <boxGeometry args={[0.2, 0.2, 0.05]} />
+              <Edges color="#ffffff" threshold={15} />
+            </mesh>
+          </group>
+        ))}
+
+        {/* 2.4 Internal Coils (adds texture inside the base) */}
+        <mesh position={[0, 0, -0.1]} material={blueprintShellMatSecondary}>
+          <torusGeometry args={[1.1, 0.06, 16, 64]} />
+          <Edges color="#ffffff" threshold={15} />
+        </mesh>
+
+        {/* 2.0 Internal Coil */}
+        <mesh position={[0, 0, -0.2]} material={blueprintShellMatSecondary}>
+          <torusGeometry args={[0.9, 0.05, 16, 64]} />
+          <Edges color="#ffffff" threshold={15} />
+        </mesh>
       </motion.group>
     </motion.group>
   );
