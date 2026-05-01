@@ -81,8 +81,19 @@ export default function ReactorModel({
     side: THREE.DoubleSide,
   });
 
+  // Warm dark backing so copper edges pop instead of reading against blue-black
+  const copperShellMat = new THREE.MeshBasicMaterial({
+    color: "#120a04",
+    transparent: true,
+    opacity: 0.5,
+    depthWrite: false,
+    side: THREE.DoubleSide,
+  });
+
   const edgeColor = "#06b6d4";
   const edgeThreshold = 15;
+  const copperEdge = "#c87941";
+  const copperRibEdge = "#e8973a";
 
   return (
     <motion.group
@@ -178,18 +189,18 @@ export default function ReactorModel({
 
           {[...Array(10)].map((_, i) => (
             <group key={`coil-${i}`} rotation={[0, 0, (i * Math.PI) / 5]}>
-              <mesh position={[0, 3, 0]} material={blueprintShellMat}>
+              <mesh position={[0, 3, 0]} material={copperShellMat}>
                 <boxGeometry args={[1, 0.6, 0.8]} />
-                <Edges color={edgeColor} threshold={edgeThreshold} />
+                <Edges color={copperEdge} threshold={edgeThreshold} />
               </mesh>
               {[...Array(8)].map((_, j) => (
                 <mesh
                   key={`rib-${j}`}
                   position={[0, 3.05, -0.3 + j * 0.1]}
-                  material={blueprintShellMat}
+                  material={copperShellMat}
                 >
                   <boxGeometry args={[1.1, 0.1, 0.02]} />
-                  <Edges color="#ffffff" threshold={edgeThreshold} />
+                  <Edges color={copperRibEdge} threshold={edgeThreshold} />
                 </mesh>
               ))}
             </group>
